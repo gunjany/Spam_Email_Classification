@@ -37,7 +37,7 @@ cleaned_emails = clean_text(emails)
 
 #Data extraction: removing the stopping words(unuseful)
 from sklearn.feature_extraction.text import CountVectorizer
-cv = CountVectorizer(stop_words = 'english', max_features = 500)
+cv = CountVectorizer(stop_words = 'english', max_features = 100000)
 
 
 #Divide the dataset into train and test dataset
